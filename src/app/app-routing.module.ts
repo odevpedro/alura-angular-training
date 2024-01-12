@@ -4,13 +4,19 @@ import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensam
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 
 const routes: Routes = [
+
+  {  path:'',
+   redirectTo: 'listarPensamento',
+   pathMatch: 'full'
+  },
+
   {  path: 'criarPensamento',
      component: CriarPensamentoComponent
-},
+  },
 
-{  path:'listarPensamento',
-   component: ListarPensamentoComponent
-},
+  {  path:'listarPensamento',
+     component: ListarPensamentoComponent
+  }
 
 ];
 
